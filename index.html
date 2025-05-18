@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimaize - Jouw AI Gezondheidscoach</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #1e293b;
+    }
+    header {
+      background: linear-gradient(90deg, #5eead4, #06b6d4);
+      color: #0f172a;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 1.25rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #2563eb;
+    }
+    .hero {
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+      background: linear-gradient(to right, #d1fae5, #cffafe);
+      color: #0f172a;
+    }
+    .hero-content {
+      max-width: 700px;
+      margin: auto;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: #334155;
+    }
+    .btn-primary {
+      background: #06b6d4;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 9999px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: #0891b2;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .features, .pricing, .kpi, .contact {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 10px 30px rgba(6,182,212,0.1);
+      transition: transform 0.3s;
+    }
+    .features:hover, .pricing:hover, .kpi:hover, .contact:hover {
+      transform: scale(1.02);
+    }
+    .card {
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      border-left: 5px solid #06b6d4;
+      background: #ecfeff;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.75rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 1.1rem;
+    }
+    ul li::before {
+      content: "✔";
+      color: #10b981;
+      position: absolute;
+      left: 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #94a3b8;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    footer {
+      background: #06b6d4;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Optimaize</h1>
+    <p>AI Gezondheidscoach voor Garmin-gebruikers</p>
+    <nav>
+      <a href="#features">Voordelen</a>
+      <a href="#pricing">Prijzen</a>
+      <a href="#kpi">Over Ons</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Word de Gezonde Jij met Optimaize</h1>
+      <p>AI-gedreven inzichten. Slimme aanbevelingen. Alles op basis van jouw Garmin-gegevens.</p>
+      <button class="btn-primary">Start Gratis</button>
+    </div>
+  </div>
+
+  <section id="features" class="features">
+    <h2 class="section-title">Waarom Optimaize?</h2>
+    <div class="card">
+      <h3>Gepersonaliseerde AI-Coaching</h3>
+      <p>Geen standaardadvies, maar hyperpersoonlijke aanbevelingen op basis van jouw activiteitsdata. Onze algoritmes analyseren je bewegingen, slaappatronen en hartslaggegevens om je precies te vertellen wat jouw lichaam nodig heeft om optimaal te functioneren.</p>
+    </div>
+    <div class="card">
+      <h3>Naadloze Garmin-integratie</h3>
+      <p>Met één druk op de knop synchroniseer je je Garmin-apparaat met Optimaize. Onze slimme systemen doen de rest en vertalen jouw ruwe data naar concrete inzichten en tips die je meteen kunt toepassen.</p>
+    </div>
+    <div class="card">
+      <h3>Mentale + Fysieke Gezondheid</h3>
+      <p>Optimaize is meer dan een fitnessapp. Wij combineren jouw fysieke data met AI om ook stress, slaapkwaliteit en mentale balans in kaart te brengen. Zo krijg je een volledig beeld van je gezondheid én een routekaart naar verbetering.</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2 class="section-title">Betaalbare Gezondheid</h2>
+    <ul>
+      <li>✅ €10/maand of €99/jaar</li>
+      <li>✅ 14 dagen gratis proberen</li>
+    </ul>
+    <p><em>"Een gezonde levensstijl hoeft niet duur te zijn."</em></p>
+    <button class="btn-primary">Start Nu</button>
+  </section>
+
+  <section id="kpi" class="kpi">
+    <h2 class="section-title">Over Ons</h2>
+    <div class="card">
+      <h3>Onze Missie</h3>
+      <p>Bij Optimaize geloven we dat technologie mensen moet helpen om gezonder en gelukkiger te leven. Daarom bouwen wij aan een AI-gestuurd platform dat gezondheid persoonlijk maakt. Wij willen barrières wegnemen en mensen begeleiden op hun weg naar een beter leven, stap voor stap, dag na dag.</p>
+    </div>
+    <div class="card">
+      <h3>Onze Visie</h3>
+      <p>We willen elke Garmin-gebruiker ondersteunen met slimme, toegankelijke en effectieve coaching op maat. We dromen van een wereld waarin gezondheidsverbetering eenvoudig, concreet en persoonlijk wordt. Met behulp van geavanceerde technologieën en slimme dataverwerking creëren we inzichten die mensen echt verder helpen – zonder technische barrières, maar met een menselijke benadering.</p>
+    </div>
+    <div class="card">
+      <h3>Ons Team</h3>
+      <p>Ons team bestaat uit een diverse groep toegewijde professionals: softwareontwikkelaars, data-analisten, UX/UI-designers, gezondheidsspecialisten en strategen. Ieder lid brengt unieke expertise mee, maar we delen één duidelijke drijfveer: het verbeteren van gezondheid door technologie. We werken nauw samen, combineren wetenschap met empathie en vertalen data naar mensgerichte oplossingen. Waar de één zich verdiept in AI-logica, focust de ander op gebruiksvriendelijkheid of holistisch welzijn. Zo ontstaat een krachtige mix van tech en zorg, gebouwd voor echte impact.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contacteer Ons</h2>
+    <p>Wil je samenwerken of heb je vragen? We horen graag van je.</p>
+    <form>
+      <input type="text" placeholder="Naam" required>
+      <input type="email" placeholder="E-mail" required>
+      <textarea placeholder="Bericht" rows="5" required></textarea>
+      <button class="btn-primary" type="submit">Verstuur</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Optimaize. Gecreëerd met zorg en AI.</p>
+  </footer>
+</body>
+</html>
